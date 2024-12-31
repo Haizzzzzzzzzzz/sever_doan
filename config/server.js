@@ -7,5 +7,5 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
-  url: env('PUBLIC_URL', ''), // Đặt base URL nếu cần, hoặc để trống để dùng URL tương đối
+  url: '', // Đảm bảo để trống URL base
 });
