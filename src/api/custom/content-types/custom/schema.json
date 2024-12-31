@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customs",
+  "info": {
+    "singularName": "custom",
+    "pluralName": "customs",
+    "displayName": "Custom",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_custom": {
+      "type": "string"
+    },
+    "image_custom": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phoneModel": {
+      "type": "string"
+    },
+    "user_custom": {
+      "type": "string"
+    }
+  }
+}
