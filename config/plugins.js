@@ -2,11 +2,7 @@ module.exports = ({ env }) => ({
   upload: {
     config: {
       providerOptions: {
-        url: '/uploads', // URL tương đối cho hình ảnh
-      },
-      actionOptions: {
-        upload: {},
-        delete: {},
+        url: env('UPLOAD_URL', '/uploads'), // Chỉ đường dẫn tương đối nếu cần
       },
     },
   },
