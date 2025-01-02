@@ -987,7 +987,7 @@ export interface ApiOrderOrder extends Schema.CollectionType {
   };
   attributes: {
     order_number: Attribute.String;
-    total_price: Attribute.BigInteger;
+    total_price: Attribute.Float;
     status: Attribute.Enumeration<['Pending', 'Completed', 'Cancelled']>;
     shipping_address: Attribute.Text;
     recipient_phone: Attribute.BigInteger;
